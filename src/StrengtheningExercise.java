@@ -50,5 +50,9 @@ public class StrengtheningExercise {
         this.weight = strengtheningExercise.getWeight();
     }
 
+    public String toString(){
+        return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", this.name, this.duration, this.repetitions, this.weight);
+    }
+
 
 }

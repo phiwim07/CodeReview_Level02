@@ -28,6 +28,12 @@ public class AerobicExercise {
         this.distance = distance;
     }
 
+    public AerobicExercise(){
+        this.name = "UNKNOWN";
+        this.duration = 0;
+        this.distance = 0;
+    }
+
     public AerobicExercise(String name, int duration, int distance) {
         this.name = name;
         this.duration = duration;
@@ -39,4 +45,9 @@ public class AerobicExercise {
         this.duration = aerobicExercise.getDuration();
         this.distance = aerobicExercise.getDistance();
     }
+
+    public String toString(){
+        return String.format("Name: %s, Duration: %d, Distance: %d", this.name, this.duration, this.distance);
+    }
+
 }

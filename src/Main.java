@@ -11,7 +11,6 @@ public class Main {
 
         System.out.println(person.asString());
         System.out.println("Calories burned: " + workoutsession.getTotalCaloriesBurned());
-
     }
 
 

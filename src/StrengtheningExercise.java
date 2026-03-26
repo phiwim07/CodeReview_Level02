@@ -1,8 +1,8 @@
 public class StrengtheningExercise {
-    String name;
-    int duration;
-    int repetitions;
-    int weight;
+    private String name;
+    private int duration;
+    private int repetitions;
+    private int weight;
 
     public void setName(String name) {
         this.name = name;

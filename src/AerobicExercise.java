@@ -1,8 +1,8 @@
 public class AerobicExercise {
 
-    String name;
-    int duration;
-    int distance;
+    private String name;
+    private int duration;
+    private int distance;
 
     public String getName() {
         return name;
@@ -28,7 +28,7 @@ public class AerobicExercise {
         this.distance = distance;
     }
 
-    public AerobicExercise(String name, int duration, int distance){
+    public AerobicExercise(String name, int duration, int distance) {
         this.name = name;
         this.duration = duration;
         this.distance = distance;

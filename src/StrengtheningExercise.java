@@ -39,7 +39,7 @@ public class StrengtheningExercise extends Exercise {
 
     @Override
     public String toString(){
-        return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", getName(), getDuration(), this.repetitions, this.weight);
+        return super.toString() + String.format(", Repetitions: %d, Weight: %d", this.repetitions, this.weight);
     }
 
 

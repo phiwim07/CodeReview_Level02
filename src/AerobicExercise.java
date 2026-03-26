@@ -1,4 +1,4 @@
-public class AerobicExercise extends Exercise{
+public class AerobicExercise extends Exercise {
 
     private int distance;
 
@@ -10,7 +10,7 @@ public class AerobicExercise extends Exercise{
         this.distance = distance;
     }
 
-    public AerobicExercise(){
+    public AerobicExercise() {
         super("UNKNOWN", 0);
         this.distance = 0;
     }
@@ -26,8 +26,8 @@ public class AerobicExercise extends Exercise{
     }
 
     @Override
-    public String toString(){
-        return String.format("Name: %s, Duration: %d, Distance: %d", getName(), getDuration(), this.distance);
+    public String toString() {
+        return super.toString() + String.format(", Distance: %d", this.distance);
     }
 
 }

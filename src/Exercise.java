@@ -23,5 +23,10 @@ public class Exercise {
         this.duration = duration;
     }
 
+    @Override
+    public String toString(){
+        return String.format("Name: %s, Duration: %d", name, duration);
+    }
+
 
 }

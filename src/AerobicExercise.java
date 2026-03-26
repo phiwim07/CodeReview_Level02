@@ -46,6 +46,7 @@ public class AerobicExercise {
         this.distance = aerobicExercise.getDistance();
     }
 
+    @Override
     public String toString(){
         return String.format("Name: %s, Duration: %d, Distance: %d", this.name, this.duration, this.distance);
     }

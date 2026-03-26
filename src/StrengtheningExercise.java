@@ -36,6 +36,13 @@ public class StrengtheningExercise {
         return this.repetitions;
     }
 
+    public StrengtheningExercise(){
+        this.name = "UNKNOWN";
+        this.duration = 0;
+        this.repetitions = 0;
+        this.weight = 0;
+    }
+
     public StrengtheningExercise(String name, int duration, int repetitions, int weight) {
         this.name = name;
         this.duration = duration;
@@ -49,7 +56,7 @@ public class StrengtheningExercise {
         this.repetitions = strengtheningExercise.getRepetitions();
         this.weight = strengtheningExercise.getWeight();
     }
-
+    @Override
     public String toString(){
         return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", this.name, this.duration, this.repetitions, this.weight);
     }

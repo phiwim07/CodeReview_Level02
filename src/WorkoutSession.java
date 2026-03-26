@@ -43,9 +43,9 @@ public class WorkoutSession {
         }
     }
 
-    public void addStrenghteningExercise(StrengtheningExercise exercise){
-        for (int i = 0; i < MAX_EXERCISES; i++){
-            if (strengtheningExercises[i] == null){
+    public void addStrenghteningExercise(StrengtheningExercise exercise) {
+        for (int i = 0; i < MAX_EXERCISES; i++) {
+            if (strengtheningExercises[i] == null) {
                 strengtheningExercises[i] = exercise;
                 updateTotalCaloriesBurned(exercise);
                 return;
@@ -54,18 +54,22 @@ public class WorkoutSession {
     }
 
     private void updateTotalCaloriesBurned(AerobicExercise exercise) {
-        totalCaloriesBurned += (int)(exercise.getDuration() * person.getWeight() * 17.5) / 200;
+        totalCaloriesBurned += (int) (exercise.getDuration() * person.getWeight() * 17.5) / 200;
     }
 
-    private void updateTotalCaloriesBurned(StrengtheningExercise exercise){
+    private void updateTotalCaloriesBurned(StrengtheningExercise exercise) {
         totalCaloriesBurned += (exercise.getDuration() * 6);
     }
 
-    private void recalculateCaloriesBurned(){
+    private void recalculateCaloriesBurned() {
         totalCaloriesBurned = 0;
         for (int i = 0; i < MAX_EXERCISES; i++) {
-            updateTotalCaloriesBurned(aerobicExercises[i]);
-            updateTotalCaloriesBurned(strengtheningExercises[i]);
+            if (aerobicExercises[i] != null) {
+                updateTotalCaloriesBurned(aerobicExercises[i]);
+            }
+            if (strengtheningExercises[i] != null) {
+                updateTotalCaloriesBurned(strengtheningExercises[i]);
+            }
         }
     }
 

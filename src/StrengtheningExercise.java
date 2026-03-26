@@ -1,5 +1,5 @@
 public class StrengtheningExercise {
-    public String name;
+    private String name;
     private int duration;
     private int repetitions;
     private int weight;

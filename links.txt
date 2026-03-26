@@ -1,5 +1,0 @@
-https://raw.githubusercontent.com/phiwim07/CodeReview_Level02/main/src/AerobicExercise.java
-https://raw.githubusercontent.com/phiwim07/CodeReview_Level02/main/src/StrengtheningExercise.java
-https://raw.githubusercontent.com/phiwim07/CodeReview_Level02/main/src/WorkoutSession.java
-https://raw.githubusercontent.com/phiwim07/CodeReview_Level02/main/src/Person.java
-https://raw.githubusercontent.com/phiwim07/CodeReview_Level02/main/src/Main.java

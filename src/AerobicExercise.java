@@ -1,4 +1,4 @@
-public class AerobicExercise {
+public class AerobicExercise extends Exercise{
 
     private String name;
     private int duration;
@@ -29,20 +29,17 @@ public class AerobicExercise {
     }
 
     public AerobicExercise(){
-        this.name = "UNKNOWN";
-        this.duration = 0;
+        super("UNKNOWN", 0);
         this.distance = 0;
     }
 
     public AerobicExercise(String name, int duration, int distance) {
-        this.name = name;
-        this.duration = duration;
+        super(name, duration);
         this.distance = distance;
     }
 
     public AerobicExercise(AerobicExercise aerobicExercise) {
-        this.name = aerobicExercise.getName();
-        this.duration = aerobicExercise.getDuration();
+        super(aerobicExercise.getName(), aerobicExercise.getDuration());
         this.distance = aerobicExercise.getDistance();
     }
 

@@ -1,4 +1,5 @@
-public class StrengtheningExercise {
+public class StrengtheningExercise extends Exercise {
+
     private String name;
     private int duration;
     private int repetitions;
@@ -37,25 +38,23 @@ public class StrengtheningExercise {
     }
 
     public StrengtheningExercise(){
-        this.name = "UNKNOWN";
-        this.duration = 0;
+        super("UNKNOWN", 0);
         this.repetitions = 0;
         this.weight = 0;
     }
 
     public StrengtheningExercise(String name, int duration, int repetitions, int weight) {
-        this.name = name;
-        this.duration = duration;
+        super(name, duration);
         this.repetitions = repetitions;
         this.weight = weight;
     }
 
     public StrengtheningExercise(StrengtheningExercise strengtheningExercise) {
-        this.name = strengtheningExercise.getName();
-        this.duration = strengtheningExercise.getDuration();
+        super(strengtheningExercise.getName(), strengtheningExercise.getDuration());
         this.repetitions = strengtheningExercise.getRepetitions();
         this.weight = strengtheningExercise.getWeight();
     }
+
     @Override
     public String toString(){
         return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", this.name, this.duration, this.repetitions, this.weight);

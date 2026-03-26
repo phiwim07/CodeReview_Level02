@@ -1,6 +1,6 @@
 public class Exercise {
-    String name;
-    int duration;
+    private String name;
+    private int duration;
 
     public String getName() {
         return name;
@@ -10,11 +10,11 @@ public class Exercise {
         this.name = name;
     }
 
-    public int getDiration() {
+    public int getDuration() {
         return duration;
     }
 
-    public void setDiration(int duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 

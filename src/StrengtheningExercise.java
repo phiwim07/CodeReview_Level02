@@ -1,25 +1,7 @@
 public class StrengtheningExercise extends Exercise {
 
-    private String name;
-    private int duration;
     private int repetitions;
     private int weight;
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
-
-    public int getDuration() {
-        return this.duration;
-    }
 
     public void setWeight(int weight) {
         this.weight = weight;
@@ -57,7 +39,7 @@ public class StrengtheningExercise extends Exercise {
 
     @Override
     public String toString(){
-        return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", this.name, this.duration, this.repetitions, this.weight);
+        return String.format("Name: %s, Duration: %d, Repetitions: %d, Weight: %d", getName(), getDuration(), this.repetitions, this.weight);
     }
 
 

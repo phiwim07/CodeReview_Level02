@@ -1,24 +1,6 @@
 public class AerobicExercise extends Exercise{
 
-    private String name;
-    private int duration;
     private int distance;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getDuration() {
-        return duration;
-    }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
 
     public int getDistance() {
         return distance;
@@ -45,7 +27,7 @@ public class AerobicExercise extends Exercise{
 
     @Override
     public String toString(){
-        return String.format("Name: %s, Duration: %d, Distance: %d", this.name, this.duration, this.distance);
+        return String.format("Name: %s, Duration: %d, Distance: %d", getName(), getDuration(), this.distance);
     }
 
 }

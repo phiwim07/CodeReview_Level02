@@ -38,6 +38,11 @@ public class StrengtheningExercise extends Exercise {
     }
 
     @Override
+    public double calculateCalories() {
+        return this.repetitions * this.weight * 0.05;
+    }
+
+    @Override
     public String toString(){
         return super.toString() + String.format(", Repetitions: %d, Weight: %d", this.repetitions, this.weight);
     }

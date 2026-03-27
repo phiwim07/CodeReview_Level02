@@ -1,6 +1,11 @@
-public class AerobicExercise extends Exercise {
+public class AerobicExercise extends Exercise implements Trainable{
 
     private int distance;
+
+    @Override
+    public String getTrainingInfo() {
+        return "Sinnvoller String";
+    }
 
     public int getDistance() {
         return distance;
@@ -23,6 +28,11 @@ public class AerobicExercise extends Exercise {
     public AerobicExercise(AerobicExercise aerobicExercise) {
         super(aerobicExercise.getName(), aerobicExercise.getDuration());
         this.distance = aerobicExercise.getDistance();
+    }
+
+    @Override
+    public double calculateCalories() {
+        return this.distance * 0.06;
     }
 
     @Override

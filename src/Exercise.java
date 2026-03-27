@@ -1,4 +1,4 @@
-public class Exercise {
+public abstract class Exercise {
     private String name;
     private int duration;
 
@@ -22,6 +22,8 @@ public class Exercise {
         this.name = name;
         this.duration = duration;
     }
+
+    public abstract double calculateCalories();
 
     @Override
     public String toString(){
